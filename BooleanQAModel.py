@@ -31,4 +31,4 @@ class BooleanQAModel:
 
     def predict(self, context, question):
         p_yes, p_no = self.getProbailities(context, question)
-        return "Yes" if p_yes > p_no else "No"
+        return "Yes." if p_yes > p_no else "No."
