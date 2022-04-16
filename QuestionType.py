@@ -22,7 +22,7 @@ class QuestionType:
     def predict(self, question):
         if self.__isBoolean(question):
             return 'boolean'
-        elif self.__isNumerical:
+        elif self.__isNumerical(question):
             return 'numerical'
         else:
             return 'textual'
