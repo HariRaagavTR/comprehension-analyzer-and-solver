@@ -8,7 +8,8 @@ class QuestionType:
                             'could', 'may', 'might', 'shall', 'should',
                             'will', 'would', 'must', 'ought', 'do',
                             'does', 'did', 'have', 'has', 'had']
-        # Add more here!
+        self.numericalTypes = ['how much more', 'how much lesser', 'how many', 'how much',
+                               'what were the',]
 
     def __isBoolean(self, question):
         if question.split()[0].lower() in self.boolenTypes:
@@ -16,7 +17,11 @@ class QuestionType:
         return False
     
     def __isNumerical(self, question):
-        # Add logic here
+        v1 = question.split()
+        q1 = v1[0].lower() + v1[1] + v1[2]
+        q2 = v1[0].lower() + v1[1]
+        if q1 in self.numericalTypes or q2 in self.numericalTypes:
+            return True
         return False
 
     def predict(self, question):
