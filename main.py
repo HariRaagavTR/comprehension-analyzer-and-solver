@@ -2,8 +2,8 @@ from flask import Flask, request, render_template, redirect, url_for
 
 from QuestionType import QuestionType
 from BooleanQAModel import BooleanQAModel
+from TextualQAModel import BERTModel
 # import NumberModel
-# import TextModel
 
 data = {
     'context': '',
@@ -13,8 +13,8 @@ data = {
 
 questionType = QuestionType()
 booleanQAModel = BooleanQAModel('./resources/models/BooleanQAModel.pth')
+textualModel = BERTModel()
 # numberModel = NumberModel()
-# textModel = TextModel()
 
 app = Flask(__name__)
 
@@ -33,7 +33,7 @@ def submit():
     elif qType == 'numerical':
         answer = ''
     else:
-        answer = ''
+        answer = textualModel.predict(context, question)
     
     data['context'] = context
     data['question'] = question
