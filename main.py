@@ -14,7 +14,7 @@ data = {
 questionType = QuestionType()
 booleanQAModel = BooleanQAModel('./resources/models/BooleanQAModel.pth')
 textualModel = BERTModel()
-# numberModel = NumberModel()
+numberModel = NumericalQAModel()
 
 app = Flask(__name__)
 
