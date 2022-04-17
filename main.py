@@ -3,7 +3,7 @@ from flask import Flask, request, render_template, redirect, url_for
 from QuestionType import QuestionType
 from BooleanQAModel import BooleanQAModel
 from TextualQAModel import BERTModel
-# import NumberModel
+from NumericalQAModel import NumericalQAModel
 
 data = {
     'context': '',
@@ -31,7 +31,7 @@ def submit():
     if qType == 'boolean':
         answer = booleanQAModel.predict(context, question)
     elif qType == 'numerical':
-        answer = NumericalAQModel.predict(context, question)
+        answer = numberModel.predict(context, question)
     else:
         answer = textualModel.predict(context, question)
     
