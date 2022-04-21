@@ -6,5 +6,9 @@ class NumericalQAModel:
     
     def predict(self, context, question):
         answer = self.model.predict(question, context)
-        finalAnswer = answer["answer"]["value"]
+        finalAnswer = ''
+        try:
+            finalAnswer = answer["answer"]["value"]
+        except:
+            print('ERROR: Unable to retreive answer in NumericalQAModel')
         return finalAnswer

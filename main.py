@@ -32,6 +32,8 @@ def submit():
         answer = booleanQAModel.predict(context, question)
     elif qType == 'numerical':
         answer = numberModel.predict(context, question)
+        if not answer:
+            answer = textualModel.predict(context, question)
     else:
         answer = textualModel.predict(context, question)
     
