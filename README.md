@@ -13,7 +13,7 @@ The complete dataset can be found in the given links below
 1. DROP : The link to this dataset can be found <a href="https://allenai.org/data/drop">here</a>
 2. SQuAD : The link to this dataset can be found <a href="https://rajpurkar.github.io/SQuAD-explorer/">here</a>
 3. BoolQ : The link to this dataset used for this project can be found <a href="https://huggingface.co/datasets/boolq">here</a>
-## 💻 Setup and Running the Applicaion
+## 💻 Setup and Running the Application
 1. Clone the repository using the command
 ```
 git clone git@github.com:HariRaagavTR/comprehension-analyzer-and-solver.git
