@@ -8,7 +8,7 @@ The project involves a flask front end where the user can interact with the appl
 ![alt text](https://github.com/HariRaagavTR/comprehension-analyzer-and-solver/blob/main/images/final_high_level_design.png "High Level Design")
 ## ⚙️ Links to the Datasets
 This project involves the use of a customd dataset that is a combination of the three datasets - SQuAD, DROP, BoolQ
-The dataset used for this project can be found here <a></a>
+The dataset used for this project can be found <a href="https://drive.google.com/drive/folders/1lefpxmGSmhxYmpn5OmUGwsr5RXvOysc3?usp=sharing">here</a>
 The complete dataset can be found in the given links below
 1. DROP : The link to this dataset can be found <a href="https://allenai.org/data/drop">here</a>
 2. SQuAD : The link to this dataset can be found <a href="https://rajpurkar.github.io/SQuAD-explorer/">here</a>
@@ -22,7 +22,9 @@ git clone git@github.com:HariRaagavTR/comprehension-analyzer-and-solver.git
 ```
 python3 pip install -r requirements.txt
 ```
-3. Run the application
+3. Download the directories from this <a href="https://drive.google.com/drive/folders/1lefpxmGSmhxYmpn5OmUGwsr5RXvOysc3?usp=sharing">link</a>
+4. Make a directory under the root called `resources` and put the above downloaded directories into the just created `resources` directory.
+5. Run the application
 ```
 python3 main.py
 ```
