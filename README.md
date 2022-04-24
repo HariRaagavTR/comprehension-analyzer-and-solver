@@ -12,7 +12,7 @@ The dataset used for this project can be found here <a></a>
 The complete dataset can be found in the given links below
 1. DROP : The link to this dataset can be found <a href="https://allenai.org/data/drop">here</a>
 2. SQuAD : The link to this dataset can be found <a href="https://rajpurkar.github.io/SQuAD-explorer/">here</a>
-3. BoolQ : The link to this dataset used for this project can be found <a>here</a>
+3. BoolQ : The link to this dataset used for this project can be found <a href="https://huggingface.co/datasets/boolq">here</a>
 ## 💻 Setup and Running the Applicaion
 1. Clone the repository using the command
 ```
